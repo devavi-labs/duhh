@@ -1,5 +1,4 @@
-@devavi-labs/duhh
-=================
+# @devavi-labs/duhh
 
 A personal CLI tool.
 
@@ -10,11 +9,15 @@ A personal CLI tool.
 [![License](https://img.shields.io/npm/l/@devavi-labs/duhh.svg)](https://github.com/devavi-labs/duhh/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g @devavi-labs/duhh
 $ duhh COMMAND
@@ -26,24 +29,29 @@ USAGE
   $ duhh COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`duhh create-component [FILE]`](#duhh-create-component-file)
-* [`duhh help [COMMAND]`](#duhh-help-command)
 
-## `duhh create-component [FILE]`
+- [`duhh react-component [NAME]`](#duhh-react-component-name)
+- [`duhh help [COMMAND]`](#duhh-help-command)
 
-describe the command here
+## `duhh react-component [FILE]`
+
+Creates a component in /src/components/
 
 ```
 USAGE
-  $ duhh create-component [FILE]
+  $ duhh react-component [NAME]
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -e, --export=(default|named)  exports the component as a default or named export
+  -f, --class                   creates a React class component
+  -f, --functional              creates a React functional component
+  -s, --style=(css|scss|sass)   creates and links a style file
 ```
 
 _See code: [src/commands/create-component.ts](https://github.com/devavi-labs/duhh/blob/v0.0.1/src/commands/create-component.ts)_
@@ -64,4 +72,5 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1/src/commands/help.ts)_
+
 <!-- commandsstop -->

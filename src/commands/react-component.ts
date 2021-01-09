@@ -15,7 +15,7 @@ export default class ReactComponent extends Command {
     style: flags.enum({
       options: ['css', 'scss', 'sass'],
       char: 's',
-      description: 'creates and link a style file',
+      description: 'creates and links a style file',
     }),
     export: flags.enum({
       options: ['default', 'named'],
