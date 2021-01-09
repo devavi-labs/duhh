@@ -9,15 +9,14 @@ A personal CLI tool.
 [![License](https://img.shields.io/npm/l/@devavi-labs/duhh.svg)](https://github.com/devavi-labs/duhh/blob/master/package.json)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [@devavi-labs/duhh](#devavi-labsduhh)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g @devavi-labs/duhh
 $ duhh COMMAND
@@ -29,39 +28,13 @@ USAGE
   $ duhh COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`duhh react-component [NAME]`](#duhh-react-component-name)
-- [`duhh help [COMMAND]`](#duhh-help-command)
-
-## `duhh react-component [FILE]`
-
-Creates a component in /src/components/
-
-```
-USAGE
-  $ duhh react-component [NAME]
-
-OPTIONS
-  -S, --style=(css|scss|sass)         [default: css] creates a css, scss or sass file and links it
-
-  -T, --template=(jsx|tsx)            [default: tsx] creates a .jsx or .tsx file
-
-  -c, --component=(functional|class)  [default: functional] creates a React functional or class component
-
-  -e, --export=(default|named)        [default: named] exports the component as a default or named export
-
-  -s, --includestyle                  whether to include a style file or not
-
-  -t, --includetype                   whether to include a type or not
-```
-
-_See code: [src/commands/create-component.ts](https://github.com/devavi-labs/duhh/blob/v0.0.1/src/commands/create-component.ts)_
+* [`duhh help [COMMAND]`](#duhh-help-command)
+* [`duhh react-component [NAME]`](#duhh-react-component-name)
 
 ## `duhh help [COMMAND]`
 
@@ -80,4 +53,22 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1/src/commands/help.ts)_
 
+## `duhh react-component [NAME]`
+
+Creates a component in /src/components/
+
+```
+USAGE
+  $ duhh react-component [NAME]
+
+OPTIONS
+  -S, --style=(css|scss|sass)         [default: css] creates a css, scss or sass file and links it
+  -T, --template=(jsx|tsx)            [default: tsx] creates a .jsx or .tsx file
+  -c, --component=(functional|class)  [default: functional] creates a React functional or class component
+  -e, --export=(default|named)        [default: named] exports the component as a default or named export
+  -s, --includestyle                  whether to include a style file or not
+  -t, --includetype                   whether to include a type or not
+```
+
+_See code: [src/commands/react-component.ts](https://github.com/devavi-labs/duhh/blob/v0.0.1/src/commands/react-component.ts)_
 <!-- commandsstop -->
