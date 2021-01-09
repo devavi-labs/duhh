@@ -48,10 +48,17 @@ USAGE
   $ duhh react-component [NAME]
 
 OPTIONS
-  -e, --export=(default|named)  exports the component as a default or named export
-  -f, --class                   creates a React class component
-  -f, --functional              creates a React functional component
-  -s, --style=(css|scss|sass)   creates and links a style file
+  -S, --style=(css|scss|sass)         [default: css] creates a css, scss or sass file and links it
+
+  -T, --template=(jsx|tsx)            [default: tsx] creates a .jsx or .tsx file
+
+  -c, --component=(functional|class)  [default: functional] creates a React functional or class component
+
+  -e, --export=(default|named)        [default: named] exports the component as a default or named export
+
+  -s, --includestyle                  whether to include a style file or not
+
+  -t, --includetype                   whether to include a type or not
 ```
 
 _See code: [src/commands/create-component.ts](https://github.com/devavi-labs/duhh/blob/v0.0.1/src/commands/create-component.ts)_

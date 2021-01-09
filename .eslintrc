@@ -1,6 +1,23 @@
 {
+  "extends": ["oclif", "oclif-typescript"],
   "rules": {
-    "object-curly-spacing": "off"
-  },
-  "extends": ["oclif", "oclif-typescript"]
+    "indent": "off",
+    "arrow-parens": "off",
+    "operator-linebreak": "off",
+    "object-curly-spacing": "off",
+    "unicorn/no-abusive-eslint-disable": ["none"],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ]
+  }
 }
